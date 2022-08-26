@@ -1,0 +1,38 @@
+#include<stdio.h>
+void main()
+{
+char str[20];
+int i,upper=0,lower=0;
+printf("Enter a string");
+gets(str);
+printf("string is %d",str);
+uppercase count =lowercase = special count =digitcount=0;
+for(i=0;str[i]!='\0';i++)
+{
+if(str[i]>='A' && str[i]<='Z')
+{
+uppercount++;
+}
+else if (str[i]>='0' && str[i]<='Z')
+{
+lowercount++;
+}
+else if(str[i]>='0' && str[i]<= '9')
+{
+digitcount++;
+}
+else
+{
+specialcount++;
+}
+}
+else
+{
+specialcount++;
+}}
+printf("\n uppercase count: %d \n", uppercasecount);
+printf("lowercase count: %d \n", digitcount);
+printf("digit count: %d\n",specialcount);
+printf("special character count:%d \n",specialcount);
+return 0;
+}
